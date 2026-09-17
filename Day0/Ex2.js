@@ -1,4 +1,4 @@
-let Temperature = 31;
+let Temperature = 9;
 if(Temperature > 30){
    console.log("It's hot outside!") 
 } else {
