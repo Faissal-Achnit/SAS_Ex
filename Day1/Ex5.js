@@ -1,16 +1,14 @@
 let str = "bOnjeUr";
 let count = 0;
 
-for (let i = 0; i < str.length; i++) {
-  if (str[i] === "a" ||str[i] === "e" ||str[i] === "i" ||str[i] === "o" || str[i] === "u") 
-    {
-    count++;
-  }
-  else if(str[i] === "A" ||str[i] === "E" ||str[i] === "I" ||str[i] === "O" || str[i] === "U")
-    {
-     count++;
-  }
-  
-}
-console.log(count);
+let Vowels = "aeiouAEIOU";
 
+for(let i = 0;  i < str.length; i++){
+  for(let j = 0; j < Vowels.length; j++){
+    if(str[i] === Vowels[j]){
+      count++
+    }
+  }
+} 
+ 
+console.log(count)
